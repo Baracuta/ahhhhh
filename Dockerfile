@@ -8,6 +8,7 @@ COPY . .
 
 # Install all dependencies (including dev dependencies)
 RUN npm install
+RUN chmod +x ./node_modules/.bin/tsc
 
 # Build the TypeScript project
 RUN npm run build
